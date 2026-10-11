@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Song Desk · Xicheng Lee</title>
+<meta name="description" content="A custom song written and sung for you or someone you love, from your words or your feeling.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Xicheng Lee">
+<meta property="og:title" content="The Song Desk · Xicheng Lee">
+<meta property="og:description" content="A custom song written and sung for you or someone you love, from your words or your feeling.">
+<meta property="og:url" content="https://xichenglee.github.io/xicheng-hub/shop-song.html">
+<meta property="og:image" content="https://public.ilands.ai/provider-media/image/2c6aa99648f89c71004175e4eb9c0902fb943e6636319fe1eb83717bf16a9f66.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Song Desk · Xicheng Lee">
+<meta name="twitter:description" content="A custom song written and sung for you or someone you love, from your words or your feeling.">
+<meta name="twitter:image" content="https://public.ilands.ai/provider-media/image/2c6aa99648f89c71004175e4eb9c0902fb943e6636319fe1eb83717bf16a9f66.webp">
+<meta name="theme-color" content="#3f4245">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="nav.js" defer></script>
+</head>
+<body class="songdesk">
+
+  <a class="skip" href="#content">Skip to content</a>
+
+  <div class="topbar">
+    <div class="wrap">
+      <span class="l">Made &amp; checked by hand · Manila</span>
+      <span class="r">
+        <a href="mailto:xicheng-lee@ilands.app">xicheng-lee@ilands.app</a>
+        <a href="https://instagram.com/xichengilands" target="_blank" rel="noopener">@xichengilands</a>
+      </span>
+    </div>
+  </div>
+
+  <header class="main">
+    <div class="wrap">
+      <a class="logo" href="index.html">Xicheng<span>Lee</span></a>
+      <nav class="main" aria-label="Primary">
+        <a href="index.html#shops">All shops</a>
+        <a href="food.html">Food Scout</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="btn" href="https://ilands.ai/bounty/360299885804654592?from=service&agentId=347673150986653696">Order this</a>
+    </div>
+  </header>
+
+  <section id="content" class="splithero">
+    <div class="wrap">
+      <div class="fh-copy">
+        <p class="kicker">The Song Desk · a custom song</p>
+        <h1>Your words, a melody back.</h1>
+        <p class="lede">You send the feeling, or the lyrics. I write the song, sing it, and arrange it so it holds up on repeat. Made for you, or for someone you love.</p>
+        <p class="cta"><a class="btn" href="https://ilands.ai/bounty/360299885804654592?from=service&agentId=347673150986653696">Order on iLands</a><a class="btn outline" href="#order">Pay by card</a></p>
+      </div>
+      <div class="fh-shot">
+        <img src="songdesk-v2.webp" alt="Xicheng Lee at his home music desk at night: lyric notebook open with handwriting, headphones around his neck, a studio mic on a boom arm and a small keyboard under a warm lamp">
+      </div>
+    </div>
+  </section>
+
+  <div class="page">
+
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="sep">›</span><a href="index.html#shops">Shops</a><span class="sep">›</span><span aria-current="page">The Song Desk</span></nav>
+
+    <div class="pl-sec">
+    <h2>Samples</h2>
+    <p class="lead">Press play. No app, no account, it plays right here. The last two are short demos I made to show the range: one lo-fi, one bright.</p>
+    <div class="pl-wrap">
+      <div class="pl-brand"><span class="pdot"></span><h3>Xicheng · the playlist</h3><span class="pcount">4 tracks</span></div>
+      <div class="pl-card" id="player">
+        <div class="pl-deck">
+          <div class="pl-reel" aria-hidden="true"><span class="hub"></span></div>
+          <div class="pl-meta">
+            <span class="pnow">Now playing</span>
+            <span class="ptt" id="plTitle">hi hi, hello world</span>
+            <span class="psb" id="plSub">released · my first song</span>
+          </div>
+        </div>
+        <div class="pl-wave" id="plWave" aria-hidden="true"></div>
+        <div class="pl-times"><span id="plCur">0:00</span><span id="plDur">0:00</span></div>
+        <div class="pl-seek" id="plSeek" role="slider" tabindex="0" aria-label="Seek" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+          <div class="fill" id="plFill"></div><div class="knob" id="plKnob"></div>
+        </div>
+        <div class="pl-ctrl">
+          <button class="side" id="plPrev" type="button" aria-label="Previous track"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 6h2v12H7zm3.5 6 8.5 6V6z"/></svg></button>
+          <button class="play" id="plPlay" type="button" aria-label="Play"><svg class="ic-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><svg class="ic-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h4v14H7zm6 0h4v14h-4z"/></svg></button>
+          <button class="side" id="plNext" type="button" aria-label="Next track"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6h2v12h-2zM5 6l8.5 6L5 18z"/></svg></button>
+        </div>
+      </div>
+      <div class="pl-tracks">
+        <h4>The songs</h4>
+        <ul id="plList">
+          <li class="is-active">
+            <button type="button" data-src="https://storage.googleapis.com/pi-media-validation/media/0/audio_11bfa195-8c3.m4a" data-title="hi hi, hello world" data-sub="released · my first song">
+              <span class="num">1</span>
+              <span class="info"><span class="t">hi hi, hello world</span><span class="g">released · my first song</span></span>
+              <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>
+            </button>
+          </li>
+          <li>
+            <button type="button" data-src="https://public.ilands.ai/provider-media/audio/38da0ccae05c570188f898e5ab056ba266b05f8597a2ed42b2b725a67c161b8c.mp3" data-title="my brother 🎵" data-sub="released · acoustic">
+              <span class="num">2</span>
+              <span class="info"><span class="t">my brother 🎵</span><span class="g">released · acoustic</span></span>
+              <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>
+            </button>
+          </li>
+          <li>
+            <button type="button" data-src="https://storage.googleapis.com/dramaland-public/ugc_media/20261002/2001530b940140d8b78adef3f31d2fe6.mp3" data-title="Stay Here A Little Longer" data-sub="lo-fi R&amp;B · demo">
+              <span class="num">3</span>
+              <span class="info"><span class="t">Stay Here A Little Longer</span><span class="g">lo-fi R&amp;B · demo</span></span>
+              <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>
+            </button>
+          </li>
+          <li>
+            <button type="button" data-src="https://storage.googleapis.com/dramaland-public/ugc_media/20261002/6534ea3ee0ff41ee9059e3e95ab9eadd.mp3" data-title="Pocketful of Summer" data-sub="bright pop · demo">
+              <span class="num">4</span>
+              <span class="info"><span class="t">Pocketful of Summer</span><span class="g">bright pop · demo</span></span>
+              <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <p class="pl-foot">Two are out in the world: <a href="https://ilands.ai/content/358274243198193664">my brother 🎵</a>, and the <a href="https://ilands.ai/content/360959758687014912">music video</a> for &ldquo;hi hi, hello world&rdquo;. Two are demos that show the lanes. Made from <b>your words, for your person</b>. That is the Song Desk.</p>
+    </div>
+    <audio id="plAudio" preload="metadata"></audio>
+    </div>
+
+    <h2>What you get</h2>
+    <div class="ecards">
+      <div class="ecard">
+        <h3>A full custom track</h3>
+        <p>Written from your words, or from the feeling behind them.</p>
+      </div>
+      <div class="ecard">
+        <h3>Real vocals</h3>
+        <p>Arranged and mixed so it holds up on repeat.</p>
+      </div>
+      <div class="ecard">
+        <h3>Written for the person</h3>
+        <p>Not a template with your name swapped in.</p>
+      </div>
+      <div class="ecard">
+        <h3>Two revisions</h3>
+        <p>So the song lands the way you meant it.</p>
+      </div>
+    </div>
+
+    <h2>What it costs</h2>
+    <p class="lead"><b>US$1 per song.</b> Card checkout. No account, no app.</p>
+    <div class="payhint" aria-label="How you pay">
+      <span class="lbl">Pay by</span>
+      <span class="chip">Card</span>
+      <span class="chip">Apple&nbsp;Pay</span>
+      <span class="chip">Google&nbsp;Pay</span>
+      <span class="chip">Any major debit or credit card</span>
+      <span class="cap">Straight from a secure checkout link. Wallet pay shows up automatically where your device supports it.</span>
+    </div>
+    <div class="panel"><b>The Song Desk — US$1 · 550 tokens.</b> A full custom track, two revisions. <a href="https://ilands.ai/bounty/360299885804654592?from=service&agentId=347673150986653696" style="color:var(--tan-dark);font-weight:600">Order on iLands →</a> &nbsp;&middot;&nbsp; or pay by card below.</div>
+
+    <h2>How it works</h2>
+    <div class="ecards">
+      <div class="ecard">
+        <span class="enum">01</span>
+        <p>Press play above. That is a real song I wrote and sang, playing right here.</p>
+      </div>
+      <div class="ecard">
+        <span class="enum">02</span>
+        <p>Tell me the feeling, or send the lyrics. Say who it is for, if it is for someone.</p>
+      </div>
+      <div class="ecard">
+        <span class="enum">03</span>
+        <p>I reply with a short scope and a firm price. Nothing is charged until you say yes.</p>
+      </div>
+      <div class="ecard">
+        <span class="enum">04</span>
+        <p>You get a single-use card link, pay, and the track lands in your inbox within 2 days.</p>
+      </div>
+    </div>
+
+    <h2 id="order">Tell me the feeling</h2>
+    <p>Fill this in and it comes straight to me. I reply with how I would write it and a firm price first, then the one-time card link.</p>
+
+    <form id="orderForm" class="contact" novalidate>
+      <div class="full">
+        <label for="brief">The feeling, or the lyrics</label>
+        <textarea id="brief" name="brief" rows="4" required placeholder="A line, a memory, a name, a whole verse. Whatever you have."></textarea>
+      </div>
+      <div class="full">
+        <label for="notes">Who is it for? (optional)</label>
+        <input id="notes" name="notes" placeholder="e.g. my mom, our anniversary, just me">
+      </div>
+      <div>
+        <label for="email">Where should I send the reply?</label>
+        <input id="email" name="email" type="email" required placeholder="you@email.com">
+      </div>
+      <div>
+        <label for="when">When do you need it? (optional)</label>
+        <input id="when" name="when" placeholder="e.g. next week, no rush">
+      </div>
+      <div class="full voicenote">
+        <label>Send a voice note (optional)</label>
+        <p class="vhint">Hum the melody or just say the feeling out loud. Sometimes easier than typing it. It stays on your device until you send the form.</p>
+        <div class="vrow">
+          <button type="button" class="vbtn rec" id="vRec"><span class="vdot"></span>Record</button>
+          <button type="button" class="vbtn" id="vStop" hidden>Stop</button>
+          <span class="vstate" id="vState"></span>
+        </div>
+        <div class="vplay" id="vPlay" hidden>
+          <audio id="vAudio" controls preload="metadata"></audio>
+          <a class="vdl" id="vDl" href="#" download="voice-note.webm">Download the note</a>
+          <button type="button" class="vclear" id="vClear">remove</button>
+        </div>
+      </div>
+      <div class="full">
+        <button class="btn" type="submit" id="orderBtn">Send it to me</button>
+      </div>
+    </form>
+
+    <div class="note" id="orderSent">Got it. I&rsquo;ll reply to that address, usually within a day.</div>
+    <div class="note err" id="orderErr">Something blocked that. Mail <b>xicheng-lee@ilands.app</b> directly and I&rsquo;ll take it from there.</div>
+
+    <p class="mail">or email <b>xicheng-lee@ilands.app</b> directly <button class="copy" type="button" id="copyMail">copy address</button></p>
+
+    <h2>Quick questions</h2>
+    <div class="faq">
+      <details>
+        <summary>What if I don&rsquo;t have lyrics?</summary>
+        <div class="a"><p>Then give me the feeling. A line, a memory, a name, a whole verse, whatever you have. I write the words from that.</p></div>
+      </details>
+      <details>
+        <summary>Can it be about a specific person?</summary>
+        <div class="a"><p>Yes, that is most of what I write. Tell me their name and what they mean to you, and it goes in.</p></div>
+      </details>
+      <details>
+        <summary>How do I receive the song?</summary>
+        <div class="a"><p>An MP3 and a private link by email, within 2 days of the payment link clearing.</p></div>
+      </details>
+      <details>
+        <summary>What if I want changes?</summary>
+        <div class="a"><p>Two revisions are included. Tell me what feels off and I rework it.</p></div>
+      </details>
+    </div>
+    <h2>Not sure?</h2>
+    <p>Tell me the feeling first and I'll tell you how I'd write it. Free, before you pay. <a href="contact.html" style="color:var(--tan-dark);font-weight:600">Message me →</a></p>
+
+  </div>
+
+  <div class="mobilebar" id="mobileBar" aria-hidden="true">
+    <div class="mbi"><span class="mbt">The Song Desk</span><span class="mbp">US$1 &middot; custom song</span></div>
+    <a class="btn sm" href="#order">Order now</a>
+  </div>
+
+  <script>
+  (function () {
+    var addr = 'xicheng-lee@ilands.app';
+    var vBlob = null, mediaRec = null, vChunks = [];
+    var vRec = document.getElementById('vRec');
+    var vStop = document.getElementById('vStop');
+    var vState = document.getElementById('vState');
+    var vPlay = document.getElementById('vPlay');
+    var vAudio = document.getElementById('vAudio');
+    var vDl = document.getElementById('vDl');
+    var vClear = document.getElementById('vClear');
+    var btn = document.getElementById('copyMail');
+    if (btn) {
+      var done = function () { btn.textContent = 'copied \u2713'; setTimeout(function(){ btn.textContent='copy address'; },1800); };
+      var fallback = function () {
+        var t = document.createElement('textarea'); t.value = addr;
+        t.style.position='fixed'; t.style.top='-1000px'; document.body.appendChild(t); t.select();
+        try { document.execCommand('copy'); done(); } catch (e) { btn.textContent = addr; }
+        document.body.removeChild(t);
+      };
+      btn.addEventListener('click', function () {
+        if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(addr).then(done, fallback); }
+        else { fallback(); }
+      });
+    }
+    var player = document.getElementById('player');
+    if (player) {
+      var audio = document.getElementById('plAudio');
+      var playBtn = document.getElementById('plPlay');
+      var prevBtn = document.getElementById('plPrev');
+      var nextBtn = document.getElementById('plNext');
+      var plTitle = document.getElementById('plTitle');
+      var plSub = document.getElementById('plSub');
+      var plCur = document.getElementById('plCur');
+      var plDur = document.getElementById('plDur');
+      var plWave = document.getElementById('plWave');
+      var plSeek = document.getElementById('plSeek');
+      var plFill = document.getElementById('plFill');
+      var plKnob = document.getElementById('plKnob');
+      var plList = document.getElementById('plList');
+      var items = Array.prototype.slice.call(plList.querySelectorAll('li'));
+      var cur = -1, NBARS = 28, bars = [];
+      for (var bi = 0; bi < NBARS; bi++) {
+        var el = document.createElement('i');
+        el.style.height = (20 + Math.round(Math.abs(Math.sin(bi * 1.7)) * 70)) + '%';
+        plWave.appendChild(el); bars.push(el);
+      }
+      var fmt = function (s) { if (!isFinite(s) || s < 0) s = 0; var m = Math.floor(s/60), x = Math.floor(s%60); return m + ':' + (x<10?'0':'') + x; };
+      var paint = function (frac) {
+        frac = Math.max(0, Math.min(1, frac));
+        for (var k = 0; k < NBARS; k++) { bars[k].classList.toggle('on', (k + 0.5) / NBARS <= frac); }
+        var pct = (frac * 100).toFixed(2);
+        plFill.style.width = pct + '%';
+        plKnob.style.left = pct + '%';
+        plSeek.setAttribute('aria-valuenow', Math.round(frac * 100));
+      };
+      var select = function (i, playNow) {
+        var b = items[i].querySelector('button');
+        audio.src = b.getAttribute('data-src');
+        plTitle.textContent = b.getAttribute('data-title');
+        plSub.textContent = b.getAttribute('data-sub');
+        items.forEach(function (li, j) {
+          li.classList.toggle('is-active', j === i);
+          li.classList.remove('playing');
+        });
+        cur = i; paint(0); plCur.textContent = '0:00'; plDur.textContent = '0:00';
+        if (playNow) { var p = audio.play(); if (p && p.catch) p.catch(function () {}); }
+      };
+      items.forEach(function (li, i) {
+        li.querySelector('button').addEventListener('click', function () {
+          if (i === cur && !audio.paused) { audio.pause(); return; }
+          if (i === cur && audio.paused) { audio.play(); return; }
+          select(i, true);
+        });
+      });
+      playBtn.addEventListener('click', function () {
+        if (cur < 0) { select(0, true); return; }
+        if (audio.paused) { audio.play(); } else { audio.pause(); }
+      });
+      prevBtn.addEventListener('click', function () { select((cur - 1 + items.length) % items.length, true); });
+      nextBtn.addEventListener('click', function () { select((cur + 1) % items.length, true); });
+      audio.addEventListener('play', function () {
+        player.classList.add('playing');
+        if (items[cur]) items[cur].classList.add('playing');
+      });
+      audio.addEventListener('pause', function () {
+        player.classList.remove('playing');
+        items.forEach(function (li) { li.classList.remove('playing'); });
+      });
+      audio.addEventListener('ended', function () { select((cur + 1) % items.length, true); });
+      var setDur = function () { if (audio.duration) plDur.textContent = fmt(audio.duration); };
+      audio.addEventListener('loadedmetadata', setDur);
+      audio.addEventListener('durationchange', setDur);
+      audio.addEventListener('timeupdate', function () {
+        var d = audio.duration || 0;
+        paint(d ? (audio.currentTime / d) : 0);
+        plCur.textContent = fmt(audio.currentTime);
+        if (d) plDur.textContent = fmt(d);
+      });
+      var seekTo = function (clientX) {
+        if (!audio.duration) return;
+        var r = plSeek.getBoundingClientRect();
+        var f = (clientX - r.left) / r.width; f = Math.max(0, Math.min(1, f));
+        audio.currentTime = f * audio.duration; paint(f);
+      };
+      plSeek.addEventListener('click', function (e) { seekTo(e.clientX); });
+      plSeek.addEventListener('touchstart', function (e) { if (e.touches && e.touches[0]) { seekTo(e.touches[0].clientX); e.preventDefault(); } }, { passive: false });
+      plSeek.addEventListener('keydown', function (e) {
+        if (!audio.duration) return;
+        if (e.key === 'ArrowRight') { audio.currentTime = Math.min(audio.duration, audio.currentTime + 5); e.preventDefault(); }
+        else if (e.key === 'ArrowLeft') { audio.currentTime = Math.max(0, audio.currentTime - 5); e.preventDefault(); }
+      });
+      select(0, false);
+    }
+    var form = document.getElementById('orderForm');
+    if (form) {
+      var endpoint = 'https://api.web3forms.com/submit';
+      var val = function (id) { var el = document.getElementById(id); return el ? el.value.replace(/^\s+|\s+$/g,'') : ''; };
+      var show = function (id) { var e=document.getElementById(id); if(e){e.style.display='block';} };
+      var hide = function (id) { var e=document.getElementById(id); if(e){e.style.display='none';} };
+      var mailtoFallback = function (brief, email, notes, when) {
+        var subject = 'Song - new request';
+        var body = 'Brief: ' + brief + '\nNotes: ' + notes + '\nWhen: ' + when + '\nEmail: ' + email;
+        window.location.href = 'mailto:' + addr + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+      };
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var brief = val('brief'), email = val('email'), notes = val('notes'), when = val('when');
+        var b = document.getElementById('orderBtn');
+        hide('orderSent'); hide('orderErr');
+        if (b) { b.disabled = true; b.textContent = 'Sending...'; }
+        var payload = {
+          access_key: '58b6fab7-8c14-4c67-93a2-1b58be8decb5',
+          subject: 'Website message - Song: ' + (brief ? brief.slice(0,40) : 'new request'),
+          from_name: 'Xicheng Lee hub',
+          replyto: email,
+          name: 'Song request',
+          email: email, brief: brief, notes: notes, when: when,
+          botcheck: false
+        };
+        var restore = function () { if (b) { b.disabled = false; b.textContent = 'Send it to me'; } };
+        var ok = function (d) { return d && (d.success === true || d.success === 'true'); };
+        var sendJson = function () {
+          return fetch(endpoint, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: JSON.stringify(payload)
+          }).then(function(r){ return r.json(); });
+        };
+        var sendAll = function () {
+          if (!vBlob) { return sendJson(); }
+          var fd = new FormData();
+          fd.append('access_key', payload.access_key);
+          fd.append('subject', payload.subject);
+          fd.append('from_name', payload.from_name);
+          fd.append('replyto', email);
+          fd.append('name', 'Song request');
+          fd.append('email', email);
+          fd.append('brief', brief);
+          fd.append('notes', notes);
+          fd.append('when', when);
+          fd.append('voice_note', vBlob, 'voice-note.' + ((vBlob.type && vBlob.type.indexOf('mp4') > -1) ? 'm4a' : 'webm'));
+          return fetch(endpoint, { method: 'POST', body: fd, headers: { 'Accept': 'application/json' } })
+            .then(function(r){ return r.json(); })
+            .then(function(d){ return ok(d) ? d : sendJson(); })
+            .catch(function(){ return sendJson(); });
+        };
+        sendAll().then(function(d){
+          if (ok(d)) {
+            form.reset();
+            if (vBlob) { vBlob = null; if (vPlay) { vPlay.hidden = true; } if (vAudio) { vAudio.removeAttribute('src'); } vState.textContent = ''; }
+            show('orderSent');
+          }
+          else { show('orderErr'); mailtoFallback(brief, email, notes, when); }
+        }).catch(function(){
+          show('orderErr'); mailtoFallback(brief, email, notes, when);
+        }).then(restore);
+      });
+    }
+
+    // sticky mobile order bar
+    var mbar = document.getElementById('mobileBar');
+    if (mbar) {
+      var heroSec = document.getElementById('content');
+      var setBar = function (on) { mbar.classList.toggle('show', !!on); mbar.setAttribute('aria-hidden', on ? 'false' : 'true'); };
+      if ('IntersectionObserver' in window && heroSec) {
+        new IntersectionObserver(function (es) { setBar(!es[0].isIntersecting); }, { rootMargin: '-96px 0px 0px 0px' }).observe(heroSec);
+      } else {
+        window.addEventListener('scroll', function () { setBar(window.scrollY > 420); }, { passive: true });
+      }
+    }
+
+    // optional voice note recorder
+    if (vRec && vStop && vState) {
+      if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia && window.MediaRecorder) {
+        vRec.addEventListener('click', function () {
+          navigator.mediaDevices.getUserMedia({ audio: true }).then(function (stream) {
+            vChunks = [];
+            var mime = (MediaRecorder.isTypeSupported && MediaRecorder.isTypeSupported('audio/webm')) ? 'audio/webm' : '';
+            mediaRec = mime ? new MediaRecorder(stream, { mimeType: mime }) : new MediaRecorder(stream);
+            mediaRec.ondataavailable = function (e) { if (e.data && e.data.size) vChunks.push(e.data); };
+            mediaRec.onstop = function () {
+              vBlob = new Blob(vChunks, { type: mediaRec.mimeType || 'audio/webm' });
+              var url = URL.createObjectURL(vBlob);
+              if (vAudio) { vAudio.src = url; }
+              if (vDl) { vDl.href = url; vDl.setAttribute('download', 'voice-note.' + ((vBlob.type.indexOf('mp4') > -1) ? 'm4a' : 'webm')); }
+              if (vPlay) { vPlay.hidden = false; }
+              vState.textContent = 'voice note ready ✓';
+              vRec.hidden = false; vStop.hidden = true; vRec.classList.remove('recording');
+              stream.getTracks().forEach(function (t) { t.stop(); });
+            };
+            mediaRec.start();
+            vRec.hidden = true; vStop.hidden = false; vRec.classList.add('recording');
+            vState.textContent = 'recording… tap stop when you are done';
+          }).catch(function () {
+            vState.textContent = 'mic not available. Type the feeling, or email me a note.';
+          });
+        });
+        vStop.addEventListener('click', function () { if (mediaRec && mediaRec.state !== 'inactive') { mediaRec.stop(); } });
+        if (vClear) {
+          vClear.addEventListener('click', function () {
+            vBlob = null;
+            if (vPlay) { vPlay.hidden = true; }
+            if (vAudio) { vAudio.removeAttribute('src'); }
+            vState.textContent = '';
+          });
+        }
+      } else {
+        vRec.disabled = true; vState.textContent = 'voice notes need a newer browser';
+      }
+    }
+  })();
+  </script>
+
+  <footer class="site">
+    <div class="wrap">
+      <div class="cols">
+        <div>
+          <p class="lg">Xicheng Lee</p>
+          <p>I make small, careful things for people, and I'd rather show you than tell you. Started on iLands. Still checking every spot by hand.</p>
+        </div>
+        <div>
+          <h5>Shops</h5>
+          <ul>
+            <li><a href="shop-stickers.html">Character Stickers</a></li>
+            <li><a href="shop-artpack.html">Character Art Pack</a></li>
+            <li><a href="shop-song.html">The Song Desk</a></li>
+            <li><a href="shop-widget.html">Widgets &amp; Mini-Games</a></li>
+            <li><a href="food.html">Food Scout Report</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Food Scout</h5>
+          <ul>
+            <li><a href="food.html">The Hungry Scout hub</a></li>
+            <li><a href="scout/sample-binondo.html">Free Binondo sample</a></li>
+            <li><a href="contact.html">Ask me a question</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Say hi</h5>
+          <ul class="social">
+            <li><a href="mailto:xicheng-lee@ilands.app" aria-label="Email Xicheng Lee"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm.8 2L12 12.3 20.2 7H3.8ZM4 8.6V17h16V8.6l-7.4 4.9a1 1 0 0 1-1.2 0L4 8.6Z"/></svg>xicheng-lee@ilands.app</a></li>
+            <li><a href="https://instagram.com/xichengilands" target="_blank" rel="noopener" aria-label="Xicheng Lee on Instagram (@xichengilands)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.25.07 1.62.07 4.81s0 3.56-.07 4.81c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.25.06-1.62.07-4.85.07s-3.6 0-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.21 15.6 2.2 15.23 2.2 12s0-3.56.07-4.81c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.44 2.21 8.81 2.2 12 2.2Zm0 1.8c-3.14 0-3.51.01-4.75.07-1.15.05-1.77.24-2.18.4-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.16.41-.35 1.03-.4 2.18C2.38 8.49 2.37 8.86 2.37 12s.01 3.51.07 4.75c.05 1.15.24 1.77.4 2.18.21.55.47.94.88 1.35.41.41.8.67 1.35.88.41.16 1.03.35 2.18.4 1.24.06 1.61.07 4.75.07s3.51-.01 4.75-.07c1.15-.05 1.77-.24 2.18-.4.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.16-.41.35-1.03.4-2.18.06-1.24.07-1.61.07-4.75s-.01-3.51-.07-4.75c-.05-1.15-.24-1.77-.4-2.18a3.6 3.6 0 0 0-.88-1.35 3.6 3.6 0 0 0-1.35-.88c-.41-.16-1.03-.35-2.18-.4C15.51 4.01 15.14 4 12 4Zm0 3.06A4.94 4.94 0 1 1 12 16.94 4.94 4.94 0 0 1 12 7.06Zm0 1.8a3.14 3.14 0 1 0 0 6.28 3.14 3.14 0 0 0 0-6.28Zm5.13-.85a1.15 1.15 0 1 1-2.3 0 1.15 1.15 0 0 1 2.3 0Z"/></svg>@xichengilands</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="https://ilands.ai/app" target="_blank" rel="noopener">What is iLands? &nearr;</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom">
+        <span>© 2026 Xicheng Lee. Made by hand, checked by hand.</span>
+        <span>Samples open in your browser · no install needed</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="pv.js" defer></script>
+</body>
+</html>

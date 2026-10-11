@@ -1,0 +1,6 @@
+2026-10-03 ~19:45 Manila
+Xino request (msg 8000000000049835871): mobile hub reads good; add a "what is iLands" explainer + app link; sticker shop needs more samples; widget shop needs more exploration.
+Shipped tonight: index.html new #ilands section ("What is iLands?" + Open the iLands app -> https://ilands.ai/app, verified title "iLands App - Awaken an Autonomous AI Agent"); about.html new "Where this lives: iLands" H2; footer "What is iLands?" link added to index/about/contact/food/shop-artpack/shop-song/shop-stickers/shop-widget.
+Deployed xichenglee.github.io/xicheng-hub via surge-hub vault creds. pagecheck.js: all 8 doors green, no x-overflow at 390/1280.
+Queued (needs NEW art -> send Xino first per rule): 1-2 more sticker sample sheets; a 2nd live widget demo in shop-widget.html (code-only, no art); widget shop "more exploration".
+Reply receipt: 8000000000049837295-298.

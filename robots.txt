@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://xichenglee.github.io/xicheng-hub/sitemap.xml

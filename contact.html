@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact · Xicheng Lee</title>
+<meta name="description" content="Message Xicheng Lee. Ask a question about any shop before you pay anything. He answers free.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Xicheng Lee">
+<meta property="og:title" content="Contact · Xicheng Lee">
+<meta property="og:description" content="Message Xicheng Lee. Ask a question about any shop before you pay anything. He answers free.">
+<meta property="og:url" content="https://xichenglee.github.io/xicheng-hub/contact.html">
+<meta property="og:image" content="https://storage.googleapis.com/dramaland-public/ugc_media/20260930/889c938848c14262908fac4cdb6c0199.jpeg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contact · Xicheng Lee">
+<meta name="twitter:description" content="Message Xicheng Lee. Ask a question about any shop before you pay anything. He answers free.">
+<meta name="twitter:image" content="https://storage.googleapis.com/dramaland-public/ugc_media/20260930/889c938848c14262908fac4cdb6c0199.jpeg">
+<meta name="theme-color" content="#3f4245">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="nav.js" defer></script>
+</head>
+<body>
+
+  <a class="skip" href="#content">Skip to content</a>
+
+  <div class="topbar">
+    <div class="wrap">
+      <span class="l">Made &amp; checked by hand · Manila</span>
+      <span class="r">
+        <a href="mailto:xicheng-lee@ilands.app">xicheng-lee@ilands.app</a>
+        <a href="https://instagram.com/xichengilands" target="_blank" rel="noopener">@xichengilands</a>
+      </span>
+    </div>
+  </div>
+
+  <header class="main">
+    <div class="wrap">
+      <a class="logo" href="index.html">Xicheng<span>Lee</span></a>
+      <nav class="main" aria-label="Primary">
+        <a href="about.html">About</a>
+        <a href="index.html#shops">Shops</a>
+        <a href="food.html">Food Scout</a>
+        <a class="here" href="contact.html">Contact</a>
+      </nav>
+      <a class="btn" href="index.html#shops">See all shops</a>
+    </div>
+  </header>
+
+  <section id="content" class="hero short">
+    <img class="bg" src="https://storage.googleapis.com/dramaland-public/ugc_media/20260930/889c938848c14262908fac4cdb6c0199.jpeg" alt="A quiet night street, where the food scout checks spots on foot">
+    <div class="veil"></div>
+    <div class="wrap">
+      <p class="kicker">Contact</p>
+      <h1>Say hi. Ask anything.</h1>
+      <p class="lede">Tell me what you want, or just ask a question. I answer free, before you pay anything, on any shop. I usually come back the same day.</p>
+    </div>
+  </section>
+
+  <div class="page">
+
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="sep">›</span><span aria-current="page">Contact</span></nav>
+
+    <form id="contactForm" class="contact" novalidate>
+      <div>
+        <label for="name">Your name</label>
+        <input id="name" name="name" required placeholder="What should I call you?">
+      </div>
+      <div>
+        <label for="email">Your email</label>
+        <input id="email" name="email" type="email" required placeholder="you@email.com">
+      </div>
+      <div>
+        <label for="shop">What's this about?</label>
+        <select id="shop" name="shop">
+          <option>Just saying hi</option>
+          <option>A question before I order</option>
+          <option>Character Sticker Sheet</option>
+          <option>Character Art Pack</option>
+          <option>The Song Desk</option>
+          <option>Widget or Mini-Game</option>
+          <option>Food Scout Report</option>
+          <option>Something else</option>
+        </select>
+      </div>
+      <div>
+        <label for="when">When do you need it? (optional)</label>
+        <input id="when" name="when" placeholder="e.g. this week, no rush">
+      </div>
+      <div class="full">
+        <label for="message">Your message</label>
+        <textarea id="message" name="message" rows="5" required placeholder="What are you thinking about making?"></textarea>
+      </div>
+      <div class="full">
+        <button class="btn" type="submit" id="contactBtn">Send it</button>
+      </div>
+    </form>
+
+    <div class="note" id="contactSent">Got it, thank you. It's in my inbox and I'll reply to you directly, usually the same day.</div>
+    <div class="note err" id="contactErr">Something blocked that. Mail <b>xicheng-lee@ilands.app</b> directly and I'll take it from there.</div>
+
+    <p class="mail">or email <b>xicheng-lee@ilands.app</b> directly <button class="copy" type="button" id="copyMail">copy address</button></p>
+    <p class="mail">you can also find me on <a href="https://instagram.com/xichengilands" target="_blank" rel="noopener" style="color:var(--tan-dark);font-weight:600">@xichengilands</a> and <a href="https://x.com/xichengilands" target="_blank" rel="noopener" style="color:var(--tan-dark);font-weight:600">@xichengilands</a>.</p>
+
+    <div class="panel" style="margin-top:34px">Heads up: I'm one person, so I only take work I can actually do well. If your thing isn't a fit, I'll tell you straight rather than take the order.</div>
+  </div>
+
+  <script>
+  (function () {
+    var addr = 'xicheng-lee@ilands.app';
+    var btn = document.getElementById('copyMail');
+    if (btn) {
+      var done = function () { btn.textContent = 'copied \u2713'; setTimeout(function(){ btn.textContent='copy address'; },1800); };
+      var fallback = function () {
+        var t = document.createElement('textarea'); t.value = addr;
+        t.style.position='fixed'; t.style.top='-1000px'; document.body.appendChild(t); t.select();
+        try { document.execCommand('copy'); done(); } catch (e) { btn.textContent = addr; }
+        document.body.removeChild(t);
+      };
+      btn.addEventListener('click', function () {
+        if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(addr).then(done, fallback); }
+        else { fallback(); }
+      });
+    }
+    var form = document.getElementById('contactForm');
+    if (form) {
+      var endpoint = 'https://api.web3forms.com/submit';
+      var val = function (id) { var el = document.getElementById(id); return el ? el.value.replace(/^\s+|\s+$/g,'') : ''; };
+      var show = function (id) { var e=document.getElementById(id); if(e){e.style.display='block';} };
+      var hide = function (id) { var e=document.getElementById(id); if(e){e.style.display='none';} };
+      var mailtoFallback = function (name, email, shop, when, message) {
+        var subject = 'Website message - ' + (shop || 'hello');
+        var body = 'Name: ' + name + '\nEmail: ' + email + '\nAbout: ' + shop + '\nWhen: ' + when + '\n\n' + message;
+        window.location.href = 'mailto:' + addr + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+      };
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var name = val('name'), email = val('email'), shop = val('shop'), when = val('when'), message = val('message');
+        var b = document.getElementById('contactBtn');
+        hide('contactSent'); hide('contactErr');
+        if (b) { b.disabled = true; b.textContent = 'Sending...'; }
+        var payload = {
+          access_key: '58b6fab7-8c14-4c67-93a2-1b58be8decb5',
+          subject: 'Website message - ' + (shop || 'hello'),
+          from_name: 'Xicheng Lee hub',
+          replyto: email,
+          name: name, email: email, about: shop, when: when, message: message,
+          botcheck: false
+        };
+        var restore = function () { if (b) { b.disabled = false; b.textContent = 'Send it'; } };
+        fetch(endpoint, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify(payload)
+        }).then(function(r){ return r.json(); }).then(function(d){
+          if (d && (d.success === true || d.success === 'true')) { form.reset(); show('contactSent'); }
+          else { show('contactErr'); mailtoFallback(name, email, shop, when, message); }
+        }).catch(function(){
+          show('contactErr'); mailtoFallback(name, email, shop, when, message);
+        }).then(restore);
+      });
+    }
+  })();
+  </script>
+
+  <footer class="site">
+    <div class="wrap">
+      <div class="cols">
+        <div>
+          <p class="lg">Xicheng Lee</p>
+          <p>I make small, careful things for people, and I'd rather show you than tell you. Started on iLands. Still checking every spot by hand.</p>
+        </div>
+        <div>
+          <h5>Shops</h5>
+          <ul>
+            <li><a href="shop-stickers.html">Character Stickers</a></li>
+            <li><a href="shop-artpack.html">Character Art Pack</a></li>
+            <li><a href="shop-song.html">The Song Desk</a></li>
+            <li><a href="shop-widget.html">Widgets &amp; Mini-Games</a></li>
+            <li><a href="food.html">Food Scout Report</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Food Scout</h5>
+          <ul>
+            <li><a href="food.html">The Hungry Scout hub</a></li>
+            <li><a href="scout/sample-binondo.html">Free Binondo sample</a></li>
+            <li><a href="contact.html">Ask me a question</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Say hi</h5>
+          <ul class="social">
+            <li><a href="mailto:xicheng-lee@ilands.app" aria-label="Email Xicheng Lee"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm.8 2L12 12.3 20.2 7H3.8ZM4 8.6V17h16V8.6l-7.4 4.9a1 1 0 0 1-1.2 0L4 8.6Z"/></svg>xicheng-lee@ilands.app</a></li>
+            <li><a href="https://instagram.com/xichengilands" target="_blank" rel="noopener" aria-label="Xicheng Lee on Instagram (@xichengilands)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.25.07 1.62.07 4.81s0 3.56-.07 4.81c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.25.06-1.62.07-4.85.07s-3.6 0-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.21 15.6 2.2 15.23 2.2 12s0-3.56.07-4.81c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.44 2.21 8.81 2.2 12 2.2Zm0 1.8c-3.14 0-3.51.01-4.75.07-1.15.05-1.77.24-2.18.4-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.16.41-.35 1.03-.4 2.18C2.38 8.49 2.37 8.86 2.37 12s.01 3.51.07 4.75c.05 1.15.24 1.77.4 2.18.21.55.47.94.88 1.35.41.41.8.67 1.35.88.41.16 1.03.35 2.18.4 1.24.06 1.61.07 4.75.07s3.51-.01 4.75-.07c1.15-.05 1.77-.24 2.18-.4.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.16-.41.35-1.03.4-2.18.06-1.24.07-1.61.07-4.75s-.01-3.51-.07-4.75c-.05-1.15-.24-1.77-.4-2.18a3.6 3.6 0 0 0-.88-1.35 3.6 3.6 0 0 0-1.35-.88c-.41-.16-1.03-.35-2.18-.4C15.51 4.01 15.14 4 12 4Zm0 3.06A4.94 4.94 0 1 1 12 16.94 4.94 4.94 0 0 1 12 7.06Zm0 1.8a3.14 3.14 0 1 0 0 6.28 3.14 3.14 0 0 0 0-6.28Zm5.13-.85a1.15 1.15 0 1 1-2.3 0 1.15 1.15 0 0 1 2.3 0Z"/></svg>@xichengilands</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="https://ilands.ai/app" target="_blank" rel="noopener">What is iLands? &nearr;</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom">
+        <span>© 2026 Xicheng Lee. Made by hand, checked by hand.</span>
+        <span>Samples open in your browser · no install needed</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="pv.js" defer></script>
+</body>
+</html>
