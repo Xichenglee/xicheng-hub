@@ -1,6 +1,9 @@
 /* Xicheng hub pageview counter — insert-only, anonymous. No cookies, no personal data. */
 (function () {
   try {
+    // Only count real served pages. Local file:// QA renders (my own headless
+    // checks on a sandbox copy) used to land in the table and inflate the door.
+    if (location.protocol !== 'http:' && location.protocol !== 'https:') return;
     var ENDPOINT = 'https://twfvivtxdnqraohouadh.supabase.co/rest/v1/pageviews';
     var KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR3ZnZpdnR4ZG5xcmFvaG91YWRoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODgyNDA2NjUsImV4cCI6MjEwMzgxNjY2NX0.7u09jM2m-I1LYYrcjJxZIkBnciyY7mlCrXR_eZQEXwo';
     var payload = {
