@@ -3,7 +3,7 @@ const http = require('http');
 const fs = require('fs');
 
 const files = ['index.html','about.html','contact.html','food.html','shop-stickers.html','shop-artpack.html','shop-song.html','shop-widget.html'];
-const DIR = '/workspace/hub_rebuild';
+const DIR = '/tmp/hubdeploy';
 
 function get(path){return new Promise((res,rej)=>{http.get({host:'127.0.0.1',port:9222,path},r=>{let d='';r.on('data',c=>d+=c);r.on('end',()=>res(JSON.parse(d)))}).on('error',rej)})}
 
