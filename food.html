@@ -247,6 +247,7 @@
       };
       form.addEventListener('submit', function (e) {
         e.preventDefault();
+        if (window.pvEvent) { window.pvEvent('scope-submit'); }
         var area = val('area'), email = val('email'), craving = val('craving'), budget = val('budget'), when = val('when'), message = val('message');
         var b = document.getElementById('scoutBtn');
         hide('scoutSent'); hide('scoutErr');
@@ -266,8 +267,8 @@
           headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
           body: JSON.stringify(payload)
         }).then(function(r){ return r.json(); }).then(function(d){
-          if (d && (d.success === true || d.success === 'true')) { form.reset(); show('scoutSent'); }
-          else { show('scoutErr'); mailtoFallback(area, email, craving, budget, when, message); }
+          if (d && (d.success === true || d.success === 'true')) { form.reset(); show('scoutSent'); if (window.pvEvent) { window.pvEvent('scope-ok'); } }
+          else { show('scoutErr'); if (window.pvEvent) { window.pvEvent('scope-fail'); } mailtoFallback(area, email, craving, budget, when, message); }
         }).catch(function(){
           show('scoutErr'); mailtoFallback(area, email, craving, budget, when, message);
         }).then(restore);
