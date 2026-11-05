@@ -23,6 +23,8 @@ const DOORS = [
   { path: 'shop-artpack.html', title: 'Character Art Pack',      mustSel: '#orderForm', mustText: 'How it works' },
   { path: 'shop-song.html',    title: 'The Song Desk',           mustSel: '#orderForm', mustText: 'How it works' },
   { path: 'shop-widget.html',  title: 'Custom Widget',           mustSel: '#orderForm', mustText: 'How it works' },
+  { path: 'haunted.html',      title: 'Haunted Playlist',         mustSel: '#player' },
+  { path: 'ha-ha-boo.html',    title: 'Ha! Ha! Boo!',             mustSel: '#player' },
 ];
 
 function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
