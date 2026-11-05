@@ -224,14 +224,33 @@
       }
     }
 
+    function current() {
+      return rows.filter(function (r) { return r.classList.contains('on'); })[0];
+    }
+
     rows.forEach(function (li) {
       li.querySelector('.trow').addEventListener('click', function () {
+        if (li === current()) {
+          if (player.paused) { var p = player.play(); if (p && p.catch) p.catch(function () {}); }
+          else player.pause();
+          return;
+        }
         select(li, true);
       });
     });
 
+    player.addEventListener('play', function () {
+      var li = current();
+      if (li) li.querySelector('.ico').textContent = '❚❚';
+    });
+
+    player.addEventListener('pause', function () {
+      var li = current();
+      if (li) li.querySelector('.ico').textContent = '▶';
+    });
+
     player.addEventListener('ended', function () {
-      var i = rows.findIndex(function (r) { return r.classList.contains('on'); });
+      var i = rows.indexOf(current());
       if (i > -1 && i < rows.length - 1) select(rows[i + 1], true);
     });
 
