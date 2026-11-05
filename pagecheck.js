@@ -25,6 +25,10 @@ const DOORS = [
   { path: 'shop-widget.html',  title: 'Custom Widget',           mustSel: '#orderForm', mustText: 'How it works' },
   { path: 'haunted.html',      title: 'Haunted Playlist',         mustSel: '#player' },
   { path: 'ha-ha-boo.html',    title: 'Ha! Ha! Boo!',             mustSel: '#player' },
+  { path: 'still-here.html',   title: 'Still Here',               mustSel: '#player' },
+  { path: 'feel-again.html',   title: 'Feel Again',               mustSel: '#player' },
+  { path: 'heaven-can-burn.html', title: 'Heaven Can Burn',       mustSel: '#player' },
+  { path: 'your-wolf.html',    title: 'Your Wolf',                mustSel: '#player' },
 ];
 
 function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
