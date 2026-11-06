@@ -248,6 +248,14 @@
         var body = 'Area: ' + area + '\nCraving: ' + craving + '\nBudget: ' + budget + '\nWhen: ' + when + '\nEmail: ' + email + '\n\n' + message;
         window.location.href = 'mailto:' + addr + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
       };
+      // One failure path, so a lost send is always counted. The mailto: that
+      // follows can cancel the in-flight beacon fetch and the fail beacon is
+      // the one that must survive, so the client opens a beat later.
+      var fail = function (area, email, craving, budget, when, message) {
+        show('scoutErr');
+        if (window.pvEvent) { window.pvEvent('scope-fail'); }
+        setTimeout(function () { mailtoFallback(area, email, craving, budget, when, message); }, 700);
+      };
       form.addEventListener('submit', function (e) {
         e.preventDefault();
         if (window.pvEvent) { window.pvEvent('scope-submit'); }
@@ -271,9 +279,9 @@
           body: JSON.stringify(payload)
         }).then(function(r){ return r.json(); }).then(function(d){
           if (d && (d.success === true || d.success === 'true')) { form.reset(); show('scoutSent'); if (window.pvEvent) { window.pvEvent('scope-ok'); } }
-          else { show('scoutErr'); if (window.pvEvent) { window.pvEvent('scope-fail'); } mailtoFallback(area, email, craving, budget, when, message); }
+          else { fail(area, email, craving, budget, when, message); }
         }).catch(function(){
-          show('scoutErr'); mailtoFallback(area, email, craving, budget, when, message);
+          fail(area, email, craving, budget, when, message);
         }).then(restore);
       });
     }
